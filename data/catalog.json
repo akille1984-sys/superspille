@@ -1,0 +1,600 @@
+{
+  "version": "beta-frontend-10",
+  "supports": [
+    {
+      "code": "PIN",
+      "name": "Spilla",
+      "diameter_mm": 57,
+      "contribution_eur": 4
+    },
+    {
+      "code": "SPK",
+      "name": "Specchietto",
+      "diameter_mm": 57,
+      "contribution_eur": 4
+    },
+    {
+      "code": "PTC",
+      "name": "Portachiavi",
+      "diameter_mm": 57,
+      "contribution_eur": 4
+    },
+    {
+      "code": "MGN",
+      "name": "Magnete",
+      "diameter_mm": 57,
+      "contribution_eur": 4
+    }
+  ],
+  "finishes": [
+    {
+      "code": "F01",
+      "name": "Trasparente",
+      "stock": 500
+    },
+    {
+      "code": "F02",
+      "name": "Laser",
+      "stock": 200
+    },
+    {
+      "code": "F03",
+      "name": "Sand Star",
+      "stock": 50
+    },
+    {
+      "code": "F04",
+      "name": "Star",
+      "stock": 300
+    },
+    {
+      "code": "F05",
+      "name": "Big Star",
+      "stock": 67
+    },
+    {
+      "code": "F06",
+      "name": "Dot",
+      "stock": 50
+    },
+    {
+      "code": "F07",
+      "name": "Heart",
+      "stock": 300
+    },
+    {
+      "code": "F08",
+      "name": "Gem",
+      "stock": 150
+    },
+    {
+      "code": "F09",
+      "name": "Snow",
+      "stock": 70
+    }
+  ],
+  "designs": [
+    {
+      "code": "D7",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D7.webp",
+      "name": "Barbie professione disprezzo"
+    },
+    {
+      "code": "D8",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D8.webp",
+      "name": "Tania magia di ew!"
+    },
+    {
+      "code": "D11",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D11.webp",
+      "name": "Oh Gurl…"
+    },
+    {
+      "code": "D24",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D24.webp",
+      "name": "Finokki in love"
+    },
+    {
+      "code": "D25",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D25.webp",
+      "name": "Murakami chi?"
+    },
+    {
+      "code": "D27",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D27.webp",
+      "name": "Trans Wrongs"
+    },
+    {
+      "code": "D28",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D28.webp",
+      "name": "The Gender Bender"
+    },
+    {
+      "code": "D29",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D29.webp",
+      "name": "Le goccine"
+    },
+    {
+      "code": "D44",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D44.webp",
+      "name": "Posi & Nega"
+    },
+    {
+      "code": "D54",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D54.webp",
+      "name": "Sailor amə"
+    },
+    {
+      "code": "D55",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D55.webp",
+      "name": "Sailorcommie"
+    },
+    {
+      "code": "D58",
+      "category": "Toons & Co.",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D58.webp",
+      "name": "VCO Pride 2025"
+    },
+    {
+      "code": "D2",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D2.webp",
+      "name": "AlphaMale"
+    },
+    {
+      "code": "D3",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D3.webp",
+      "name": "Antifa Kitty Club"
+    },
+    {
+      "code": "D12",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D12.webp",
+      "name": "KamaQueer"
+    },
+    {
+      "code": "D34",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D34.webp",
+      "name": "The pussy"
+    },
+    {
+      "code": "D37",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D37.webp",
+      "name": "Micio Vs. Macho"
+    },
+    {
+      "code": "D46",
+      "category": "Animalettə queer",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D46.webp",
+      "name": "QueerCat"
+    },
+    {
+      "code": "D10",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D10.webp",
+      "name": "Bene ma non…"
+    },
+    {
+      "code": "D13",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D13.webp",
+      "name": "Basse aspettative"
+    },
+    {
+      "code": "D16",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D16.webp",
+      "name": "Contaci"
+    },
+    {
+      "code": "D20",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D20.webp",
+      "name": "F*ckin' fabulous"
+    },
+    {
+      "code": "D22",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D22.webp",
+      "name": "Il fastidio"
+    },
+    {
+      "code": "D31",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D31.webp",
+      "name": "Io boh…"
+    },
+    {
+      "code": "D38",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D38.webp",
+      "name": "No Opinion"
+    },
+    {
+      "code": "D43",
+      "category": "Hai 1 nuovo messaggio",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D43.webp",
+      "name": "Piena"
+    },
+    {
+      "code": "D6",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D6.webp",
+      "name": "La Baffa"
+    },
+    {
+      "code": "D23",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D23.webp",
+      "name": "Porca figura"
+    },
+    {
+      "code": "D26",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D26.webp",
+      "name": "Lady Franca"
+    },
+    {
+      "code": "D32",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D32.webp",
+      "name": "Severa ma giusta"
+    },
+    {
+      "code": "D33",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D33.webp",
+      "name": "Bitch face"
+    },
+    {
+      "code": "D39",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D39.webp",
+      "name": "Oral"
+    },
+    {
+      "code": "D47",
+      "category": "Divas",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D47.webp",
+      "name": "La Raffa"
+    },
+    {
+      "code": "D15",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D15.webp",
+      "name": "No community without T"
+    },
+    {
+      "code": "D35",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D35.webp",
+      "name": "LGBT"
+    },
+    {
+      "code": "D36",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D36.webp",
+      "name": "Liberation"
+    },
+    {
+      "code": "D49",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D49.webp",
+      "name": "Trans Rights"
+    },
+    {
+      "code": "D53",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D53.webp",
+      "name": "Safe"
+    },
+    {
+      "code": "D60",
+      "category": "The T* in Me",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D60.webp",
+      "name": "No Visibility"
+    },
+    {
+      "code": "D17",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D17.webp",
+      "name": "Not today Satan"
+    },
+    {
+      "code": "D18",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D18.webp",
+      "name": "Judging you"
+    },
+    {
+      "code": "D30",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D30.webp",
+      "name": "Oh, honey"
+    },
+    {
+      "code": "D52",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D52.webp",
+      "name": "Meh!?"
+    },
+    {
+      "code": "D56",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D56.webp",
+      "name": "Shock!"
+    },
+    {
+      "code": "D59",
+      "category": "You Better Work!",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D59.webp",
+      "name": "No Darling"
+    },
+    {
+      "code": "D42",
+      "category": "Pride by Design",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D42.webp",
+      "name": "Free Free Palestine"
+    },
+    {
+      "code": "D45",
+      "category": "Pride by Design",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D45.webp",
+      "name": "Pride"
+    },
+    {
+      "code": "D48",
+      "category": "Pride by Design",
+      "musical": false,
+      "active": true,
+      "image": "assets/designs_v8/D48.webp",
+      "name": "Fasci appesi"
+    },
+    {
+      "code": "D1",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D1.webp",
+      "name": "Antonella Vs Valeria"
+    },
+    {
+      "code": "D4",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D4.webp",
+      "name": "Antonellina e La Borra"
+    },
+    {
+      "code": "D5",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D5.webp",
+      "name": "Si può essere più stronzə?"
+    },
+    {
+      "code": "D9",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D9.webp",
+      "name": "Sgualdrinə"
+    },
+    {
+      "code": "D14",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D14.webp",
+      "name": "Un oggetto fine…"
+    },
+    {
+      "code": "D19",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D19.webp",
+      "name": "Mariagrazia is back"
+    },
+    {
+      "code": "D21",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D21.webp",
+      "name": "Simona la falsa"
+    },
+    {
+      "code": "D40",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D40.webp",
+      "name": "Bertonic"
+    },
+    {
+      "code": "D41",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D41.webp",
+      "name": "Natale"
+    },
+    {
+      "code": "D50",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D50.webp",
+      "name": "Winner"
+    },
+    {
+      "code": "D51",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D51.webp",
+      "name": "Sashay away"
+    },
+    {
+      "code": "D57",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D57.webp",
+      "name": "Lo sponsor"
+    },
+    {
+      "code": "D61",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D61.webp",
+      "name": "Natasha"
+    },
+    {
+      "code": "D62",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D62.webp",
+      "name": "Antonella is back"
+    },
+    {
+      "code": "D63",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D63.webp",
+      "name": "Lady Sciarelly"
+    },
+    {
+      "code": "D64",
+      "category": "Musicali",
+      "musical": true,
+      "active": true,
+      "image": "assets/designs_v8/D64.webp",
+      "name": "La shfilada"
+    }
+  ],
+  "categories": [
+    "Toons & Co.",
+    "Animalettə queer",
+    "Hai 1 nuovo messaggio",
+    "Divas",
+    "The T* in Me",
+    "You Better Work!",
+    "Pride by Design",
+    "Musicali"
+  ]
+}

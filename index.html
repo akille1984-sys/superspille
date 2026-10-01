@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1a1230">
+  <title>SUPERSPILLE · VCO Pride 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="brandBtn" aria-label="Torna alla home">
+      <span class="brand-mark">S</span>
+      <span><strong>SUPERSPILLE</strong><small>VCO Pride 2026</small></span>
+    </button>
+    <div class="topbar-actions">
+      <button class="reviews-button" id="reviewsBtn" aria-label="Dicono di noi">Dicono di noi</button>
+      <button class="cart-button" id="cartBtn" aria-label="Apri la tua selezione">
+        <span>La tua selezione</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="screen active" data-screen="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Gadget queer altamente consigliati.<br>L'uso del buon senso è totalmente opzionale.</span>
+          <h1>64 design.<br>4 supporti.<br>9 finish.<br><em>2304 combinazioni possibili: una varietà francamente irresponsabile.</em></h1>
+          <p>Configura la tua superspilla con l’eleganza di chi sa esattamente cosa sta facendo. Oppure con la meravigliosa energia del caos. <strong>Per ogni gadget prenotato è previsto un sostegno di 4 € al momento del ritiro.</strong> Così sai già tutto, e poi puoi dedicarti alle decisioni davvero difficili: design, supporto e quantità di glitter.</p>
+          <div class="hero-actions">
+            <button class="primary big" data-action="start">Inizia a creare ✨</button>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="orbit-float"><img src="assets/hero/vco-pride-float.webp" alt=""></div>
+          <div class="orbit-chip one">64 DESIGN</div>
+          <div class="orbit-chip two">9 FINISH</div>
+          <div class="orbit-chip three">4 SUPPORTI</div>
+          <div class="orbit-chip four">SOSTIENI IL PRIDE</div>
+        </div>
+      </div>
+
+      <div class="how">
+        <article><span>1</span><h3>Scegli il supporto</h3><p>Spilla, specchietto, portachiavi o magnete. L'eterna lotta tra: moda, vanità, utilità o... beh, frigorifero.</p></article>
+        <article><span>2</span><h3>Trova il design</h3><p>Perle assolute, icone, meme e piccoli capolavori di sfacciataggine visuale.</p></article>
+        <article><span>3</span><h3>Metti il finish</h3><p>Una sottile pellicola trasparente o olografica: il design resta visibile, ma con più dramma.</p></article>
+      </div>
+
+      <section class="music-feature">
+        <div class="music-note-cloud" aria-hidden="true">♪ ♫ ♬</div>
+        <div>
+          <span class="eyebrow">Attenzione: alto rischio di distruzione del Patriarcato Mediterraneo... qualunque cosa sia.</span>
+          <h2>Le Musicali ♪</h2>
+          <p>Queste non sono semplicemente spille. Sono un’idea folle, deliziosa e oggettivamente camp. Se sei qui per fare le cose in grande, probabilmente vuoi iniziare da loro.</p>
+        </div>
+        <button class="music-cta" data-action="musicali">Portami al santuario delle Musicali</button>
+      </section>
+
+      <section class="reviews-teaser">
+        <div>
+          <span class="eyebrow">Rassegna stampa internazionale, condominiale e mitologica</span>
+          <h2>Dicono di noi</h2>
+          <p>Da Cleopatra al cassiere della Coop: il consenso è ampio, trasversale e sorprendentemente qualificato.</p>
+        </div>
+        <button class="reviews-cta" data-action="reviews">Leggi le testimonianze</button>
+      </section>
+
+      <div class="beta-note"><strong>Prenotazioni aperte.</strong> Scegli, combina e prenota il tuo gadget personalizzato per il VCO Pride.</div>
+    </section>
+
+    <section class="screen" data-screen="builder">
+      <nav class="stepper" aria-label="Passaggi configuratore">
+        <button data-go-step="1"><span>1</span>Supporto</button>
+        <button data-go-step="2"><span>2</span>Design</button>
+        <button data-go-step="3"><span>3</span>Finish</button>
+        <button data-go-step="4"><span>4</span>Anteprima</button>
+      </nav>
+
+      <section class="step-panel" data-step="1">
+        <div class="section-head">
+          <span class="eyebrow">Passaggio 1 di 4</span>
+          <h2>Che cosa vuoi creare?</h2>
+          <p>Il fronte è sempre un bottone bombato da 57 mm. Dietro scegli tu se pungere, riflettere, appenderti alle chiavi o conquistare il frigorifero.</p>
+        </div>
+        <div class="support-grid" id="supportGrid"></div>
+      </section>
+
+      <section class="step-panel" data-step="2">
+        <div class="section-head design-head">
+          <div>
+            <span class="eyebrow">Passaggio 2 di 4</span>
+            <h2>Scegli il tuo capolavoro</h2>
+            <p>Sfoglia per categoria oppure cerca per nome. Su computer passa sopra un design per vederlo più grande. Sì, anche per giudicarlo meglio.</p>
+          </div>
+          <label class="searchbox">
+            <span>⌕</span>
+            <input id="designSearch" type="search" placeholder="Cerca per nome…" autocomplete="off">
+          </label>
+        </div>
+        <div class="category-tabs" id="categoryTabs"></div>
+        <div class="music-inline-callout">
+          <strong>Tip non richiesto ma corretto:</strong> le <span>Musicali ♪</span> meritano almeno un giro, un applauso e probabilmente una prenotazione impulsiva.
+        </div>
+        <div class="design-grid" id="designGrid"></div>
+      </section>
+
+      <section class="step-panel" data-step="3">
+        <div class="section-head">
+          <span class="eyebrow">Passaggio 3 di 4</span>
+          <h2>Adesso facciamola brillare</h2>
+          <p>Il finish è una <strong>sottilissima pellicola</strong> applicata sopra il design: può essere completamente trasparente oppure avere effetti olografici. In ogni caso il disegno sotto si continua a vedere benissimo. Cambia solo il livello di sfrontatezza. ✨</p>
+        </div>
+        <div class="finish-grid" id="finishGrid"></div>
+      </section>
+
+      <section class="step-panel" data-step="4">
+        <div class="section-head">
+          <span class="eyebrow">Passaggio 4 di 4</span>
+          <h2>Guarda cos’hai combinato</h2>
+          <p>Questa è un’anteprima indicativa del fronte. Nella vita vera luce, riflessi e finish potrebbero renderla ancora più sfacciata, che è una splendida notizia.</p>
+        </div>
+        <div class="preview-layout">
+          <div class="preview-stage">
+            <div class="preview-badge" id="previewBadge">
+              <img id="previewDesign" alt="Design selezionato">
+              <img id="previewFinish" class="finish-overlay" alt="">
+              <div class="preview-gloss"></div>
+            </div>
+            <span class="preview-caption">Anteprima indicativa del fronte · 57 mm</span>
+          </div>
+          <div class="summary-card">
+            <div class="summary-line"><span>Supporto</span><strong id="summarySupport"></strong></div>
+            <div class="summary-line"><span>Design</span><strong id="summaryDesign"></strong></div>
+            <div class="summary-line"><span>Finish</span><strong id="summaryFinish"></strong></div>
+            <div class="stock-summary" id="summaryStock"></div>
+
+            <div class="quantity-row">
+              <span>Quantità</span>
+              <div class="qty-control"><button id="qtyMinus" aria-label="Diminuisci quantità">−</button><strong id="qtyValue">1</strong><button id="qtyPlus" aria-label="Aumenta quantità">+</button></div>
+            </div>
+            <button class="primary full" id="addToCartBtn">Aggiungi alla selezione</button>
+            <button class="secondary full" data-go-step="1">No, non ho capito il gioco! Scusate, interrompete!</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="screen reviews-screen" data-screen="reviews">
+      <div class="reviews-hero">
+        <span class="eyebrow">Pareri autorevoli, trasversali e assolutamente rilevanti</span>
+        <h1>Dicono di noi</h1>
+        <p>Nel tempo, il progetto ha raccolto apprezzamenti da figure di grande rilievo culturale, artistico, scientifico, mitologico e condominiale. Ne riportiamo una selezione.</p>
+        <button class="secondary reviews-back" data-action="home">← Torna alle superspille</button>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="review-card"><img src="assets/reviews/cleopatra.svg" alt="Cleopatra"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Cleopatra</h3><span>Sovrana d’Egitto</span><blockquote>“Ho conosciuto il lusso, il potere e il dramma politico. Ma poche cose hanno la stessa presenza scenica di una finitura Gem ben abbinata.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/marie-curie.svg" alt="Marie Curie"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Marie Curie</h3><span>Fisica e chimica</span><blockquote>“Brillano in modo convincente. Per una volta, senza conseguenze per la salute.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/maria-antonietta.svg" alt="Maria Antonietta"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Maria Antonietta</h3><span>Regina di Francia</span><blockquote>“Se proprio non vogliono una spilla, allora che prendano almeno uno specchietto.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/elvis.svg" alt="Elvis Presley"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Elvis Presley</h3><span>Re del rock’n’roll</span><blockquote>“A little less conversation, a little more portachiavi.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/atena.svg" alt="Atena"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Atena</h3><span>Dea della saggezza</span><blockquote>“Finalmente un progetto in cui estetica, strategia e caos controllato convivono in modo esemplare.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/lumiere.svg" alt="I fratelli Lumière"><div class="review-body"><div class="review-stars">★★★★★</div><h3>I fratelli Lumière</h3><span>Pionieri del cinema</span><blockquote>“Pensavamo che l’immagine in movimento fosse il futuro. Poi abbiamo visto le musicali.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/picasso.svg" alt="Pablo Picasso"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Pablo Picasso</h3><span>Artista</span><blockquote>“Avrei potuto farle anch’io così. Ho solo scelto, per carattere, di complicarmi la vita.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/dante.svg" alt="Dante Alighieri"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Dante Alighieri</h3><span>Poeta</span><blockquote>“Nel mezzo del cammin di mia scelta gadget, mi ritrovai davanti a 2304 combinazioni possibili.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/leonardo.svg" alt="Leonardo da Vinci"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Leonardo da Vinci</h3><span>Inventore e artista</span><blockquote>“Idea semplice, esecuzione brillante. È raro vedere una macchina del desiderio funzionare così bene.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/raffaella.svg" alt="Raffaella Carrà"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Raffaella Carrà</h3><span>Patrimonio pop</span><blockquote>“Molto bene. Allegre, precise, pop. E finalmente nessuno ha avuto paura di esagerare.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/moira.svg" alt="Moira Orfei"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Moira Orfei</h3><span>Icona circense</span><blockquote>“Finalmente un progetto che non teme il colore, il colpo d’occhio e una certa sana esuberanza.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/oscar-wilde.svg" alt="Oscar Wilde"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Oscar Wilde</h3><span>Scrittore</span><blockquote>“Ho gusti semplicissimi. Mi accontento sempre del meglio. In questo caso, Big Star.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/icaro.svg" alt="Icaro"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Icaro</h3><span>Entusiasmo eccessivo</span><blockquote>“Sono salito troppo in alto. Loro, invece, hanno trovato la quota giusta.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/galileo.svg" alt="Galileo Galilei"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Galileo Galilei</h3><span>Osservatore metodico</span><blockquote>“Eppur luccica. Ho controllato due volte.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/vicina.svg" alt="La vicina del terzo piano"><div class="review-body"><div class="review-stars">★★★★★</div><h3>La vicina del terzo piano</h3><span>Osservatrice indipendente</span><blockquote>“Non ho ancora capito bene cosa siano. Però c’è del carattere, e questo oggi manca.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/cassiere.svg" alt="Il cassiere della Coop"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Il cassiere della Coop</h3><span>Distribuzione moderna</span><blockquote>“Sono 4 euro. Ha la tessera?”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/prozia.svg" alt="La prozia"><div class="review-body"><div class="review-stars">★★★★★</div><h3>La prozia</h3><span>Autorevolezza familiare</span><blockquote>“Io non seguo tutte queste modernità. Però quella col gatto la prenderei.”</blockquote></div></article>
+        <article class="review-card"><img src="assets/reviews/piccione.svg" alt="Un piccione della piazza"><div class="review-body"><div class="review-stars">★★★★★</div><h3>Un piccione della piazza</h3><span>Presenza urbana costante</span><blockquote>“Le ho osservate da vicino. Ottima visibilità dall’alto.”</blockquote></div></article>
+      </div>
+
+      <div class="reviews-closing">
+        <strong>Come si vede, il consenso è ampio.</strong>
+        <span>E sorprendentemente qualificato.</span>
+      </div>
+    </section>
+
+    <section class="screen" data-screen="cart">
+      <div class="section-head cart-head">
+        <div>
+          <span class="eyebrow">La tua selezione</span>
+          <h2>Il bottino</h2>
+          <p>Aggiungi, togli, moltiplica. Nessuno qui giudica. Tranne forse alcune spille, ma con affetto.</p>
+        </div>
+        <button class="secondary" data-action="new-gadget">+ Voglio peggiorare la situazione</button>
+      </div>
+      <div id="cartEmpty" class="empty-state">
+        <div class="empty-badge">S</div>
+        <h3>Qui c’è fin troppa sobrietà.</h3>
+        <p>Non hai ancora creato niente. È una condizione facilmente risolvibile.</p>
+        <button class="primary" data-action="new-gadget">Rimediamo subito</button>
+      </div>
+      <div id="cartContent" hidden>
+        <div class="cart-list" id="cartList"></div>
+        <aside class="cart-total">
+          <div><span>Gadget nella prenotazione</span><strong id="cartPieces"></strong></div>
+          <button class="primary full" id="checkoutBtn">Continua con la prenotazione</button>
+          <small>Prima della produzione ti chiederemo una seconda conferma via email. Quando i gadget saranno pronti, riceverai il QR per il ritiro.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen checkout-screen" data-screen="checkout">
+      <div class="checkout-topline">
+        <button class="secondary" data-action="back-cart">← Torna al bottino</button>
+        <span class="beta-pill">Prenotazione gadget</span>
+      </div>
+
+      <div class="checkout-hero">
+        <span class="eyebrow">Prenotazione</span>
+        <h1>Ci siamo quasi.</h1>
+        <p>Prima di scatenare la produzione, ci servono solo due cose: come vuoi che ti chiamiamo e dove mandarti le mail.</p>
+      </div>
+
+      <div class="checkout-layout">
+        <form class="checkout-form" id="checkoutForm" novalidate>
+          <div class="form-section">
+            <div class="form-section-head"><span>1</span><div><h2>Presentazioni minime.</h2><p>Niente documenti, nomi anagrafici obbligatori o interrogatori. Solo quello che vuoi usare per la tua prenotazione.</p></div></div>
+            <label class="field">
+              <span>Come vuoi che ti chiamiamo?</span>
+              <input id="customerName" name="customerName" type="text" autocomplete="nickname" placeholder="Es. Ada, Luna, RigelK…" required>
+              <small>Nome, nome d’elezione o nickname: useremo questo per la tua prenotazione e nelle email.</small>
+            </label>
+            <div class="field-row">
+              <label class="field">
+                <span>Email</span>
+                <input id="customerEmail" name="customerEmail" type="email" autocomplete="email" placeholder="tu@esempio.it" required>
+              </label>
+              <label class="field">
+                <span>Conferma email</span>
+                <input id="customerEmailConfirm" name="customerEmailConfirm" type="email" autocomplete="email" placeholder="Di nuovo. Sì, davvero." required>
+              </label>
+            </div>
+            <div class="email-warning">La mail è il filo rosso di tutta l’operazione: qui arriveranno la seconda conferma e, quando tutto sarà pronto, il QR per il ritiro. Meglio controllarla due volte che inseguire un refuso per il Piemonte.</div>
+          </div>
+
+          <div class="form-section">
+            <div class="form-section-head"><span>2</span><div><h2>Come funziona dopo?</h2><p>Breve liturgia amministrativa, sorprendentemente indolore.</p></div></div>
+            <div class="after-order-flow">
+              <div><b>①</b><strong>Invii la prenotazione</strong><span>Noi la registriamo e ti assegniamo un codice prenotazione.</span></div>
+              <div><b>②</b><strong>Confermi dalla mail</strong><span>Solo allora i gadget entrano davvero in produzione.</span></div>
+              <div><b>③</b><strong>Noi li prepariamo</strong><span>Supporti, design, finish e una quantità ragionevole di concentrazione.</span></div>
+              <div><b>④</b><strong>Ricevi il QR</strong><span>Quando i gadget sono pronti, ti avvisiamo per il ritiro.</span></div>
+            </div>
+            <div class="pickup-rules">
+              <div><strong>Conferma entro il 30 settembre</strong><span>Ritiro appena ricevi il QR, anche prima della parata.</span></div>
+              <div><strong>Conferma dal 2 al 4 ottobre</strong><span>Ritiro dopo la parata, appena ricevi il QR.</span></div>
+            </div>
+          </div>
+
+          <div class="form-section checks-section">
+            <label class="checkline"><input id="privacyCheck" type="checkbox" required><span>Ho letto l’<button type="button" class="inline-link" id="privacyBtn">informativa privacy</button> relativa alla gestione della prenotazione.</span></label>
+            <label class="checkline"><input id="confirmationCheck" type="checkbox" required><span>Ho capito che questa richiesta <strong>non entra in produzione finché non la confermo una seconda volta dalla mail</strong>.</span></label>
+          </div>
+
+          <div class="form-error" id="checkoutError" role="alert" hidden></div>
+          <button class="primary checkout-submit" id="checkoutSubmitBtn" type="submit">Invia la richiesta ✨</button>
+          <small class="submit-note">La prenotazione viene registrata nel sistema SUPERSPILLE. La produzione parte solo dopo la seconda conferma via email.</small>
+        </form>
+
+        <aside class="checkout-summary">
+          <span class="eyebrow">Riepilogo</span>
+          <h2>Controlliamo la prenotazione.</h2>
+          <div class="checkout-items" id="checkoutItems"></div>
+          <div class="checkout-totals">
+            <div><span>Gadget prenotati</span><strong id="checkoutPieces">0</strong></div>
+          </div>
+          <div class="no-payment"><strong>Una prenotazione, non una corsa alla cassa.</strong><span>Dopo l’invio riceverai una mail per confermare davvero che vuoi che li prepariamo.</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen order-screen" data-screen="order-received">
+      <div class="order-card">
+        <div class="order-status-icon">✓</div>
+        <span class="eyebrow">Prenotazione ricevuta</span>
+        <h1>Fatto.<br>Adesso esiste davvero.</h1>
+        <p class="order-lead">La prenotazione è stata registrata. Adesso manca il passaggio che separa un desiderio da una produzione vera: <strong>la seconda conferma via email</strong>.</p>
+        <div class="order-code-box"><span>Codice prenotazione</span><strong id="receivedOrderCode">SP-0000</strong><button type="button" id="copyOrderCode">Copia</button></div>
+        <div class="order-next">
+          <div><span>1</span><p><strong>Controlla la posta</strong><br>Riceverai una mail all’indirizzo indicato.</p></div>
+          <div><span>2</span><p><strong>Premi “Confermo la mia prenotazione”</strong><br>Finché non lo fai, noi non iniziamo a produrre nulla.</p></div>
+          <div><span>3</span><p><strong>Aspetta il QR</strong><br>Quando i gadget saranno pronti, arriverà la mail per il ritiro.</p></div>
+        </div>
+        <div class="demo-email">
+          <span>EMAIL DI CONFERMA</span>
+          <h3>Ora controlla la posta.</h3>
+          <p>Abbiamo registrato la prenotazione <strong id="emailOrderCode">SP-0000</strong> per <strong id="receivedEmail">tu@esempio.it</strong>.</p>
+          <div class="mail-status" id="emailDeliveryStatus"></div>
+        </div>
+        <div class="order-actions">
+          <button class="secondary" data-action="home">Torna alla home</button>
+          <button class="secondary" data-action="new-gadget">Creo qualcos’altro</button>
+        </div>
+        <small class="submit-note">Se hai ricevuto il codice prenotazione, la richiesta è stata registrata. Non inviarla una seconda volta per “sicurezza”.</small>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="design-hover-preview" id="designHoverPreview" aria-hidden="true">
+    <img id="hoverDesignImage" alt="">
+    <div class="hover-copy"><strong id="hoverDesignName"></strong><span id="hoverDesignMusic">♪ Musicale. E no, non ti diciamo altro.</span></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="privacyDialog" class="privacy-dialog">
+    <button class="dialog-close" id="closePrivacy" aria-label="Chiudi">×</button>
+    <span class="eyebrow">Informativa privacy</span>
+    <h2>Pochi dati. Uno scopo preciso.</h2>
+    <p>I dati inseriti nella prenotazione saranno utilizzati esclusivamente per gestire la richiesta, la seconda conferma, la produzione e il ritiro dei gadget collegati al VCO Pride.</p>
+    <p>Non servono per creare un account e non verranno usati per newsletter o comunicazioni non collegate alla prenotazione.</p>
+    <p><strong>Prima della pubblicazione definitiva</strong> questa finestra verrà collegata all’informativa completa del titolare del trattamento.</p>
+    <button class="primary" id="privacyOk">Chiarissimo</button>
+  </dialog>
+
+  <script src="app-v14.js"></script>
+</body>
+</html>
